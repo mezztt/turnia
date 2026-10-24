@@ -1,0 +1,100 @@
+/* Turnia · grupo G3 (caja, productos, comisiones, packs y clientes). Prefijo g3-. Solo tokens --tn-* de turnia.css */
+.g3-small { padding: 7px 12px !important; font-size: 13px !important; border-radius: 10px !important; }
+.g3-link-btn { display: inline-flex; align-items: center; text-decoration: none; }
+.g3-linkd { background: none; border: 0; padding: 4px 2px; font: inherit; font-size: 13px; font-weight: 700; color: var(--tn-red-text); text-decoration: underline; cursor: pointer; }
+.g3-linkd:disabled { opacity: .5; cursor: default; }
+.g3-left { margin-right: auto; }
+.g3-pad { display: block; padding: 10px 12px; }
+.g3-narrow { width: 96px !important; text-align: right; }
+.g3-date { padding: 9px 12px; border: 1px solid var(--tn-line); border-radius: 12px; background: var(--tn-surface); color: var(--tn-ink); font: inherit; }
+.g3-h2 { margin: 0; font-size: 20px; color: var(--tn-ink); }
+.g3-label { display: block; font-weight: 700; font-size: 14px; color: var(--tn-ink); margin-bottom: 8px; }
+.g3-scroll { max-height: 420px; overflow: auto; }
+.g3-off td { opacity: .75; }
+
+/* selector de cliente */
+.g3-picked { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--tn-line); border-radius: 12px; background: var(--tn-surface-2); color: var(--tn-ink); }
+.g3-picked small { display: block; color: var(--tn-muted); font-size: 12.5px; }
+.g3-results { margin-top: 6px; border: 1px solid var(--tn-line); border-radius: 12px; background: var(--tn-surface); max-height: 220px; overflow: auto; }
+.g3-results button { display: flex; justify-content: space-between; gap: 10px; width: 100%; text-align: left; padding: 10px 12px; border: 0; border-top: 1px solid var(--tn-line); background: none; color: var(--tn-ink); font: inherit; cursor: pointer; }
+.g3-results button:first-child { border-top: 0; }
+.g3-results button:hover, .g3-results button:focus-visible { background: var(--tn-brand-soft); }
+.g3-results small { color: var(--tn-muted); }
+
+/* cobro */
+.g3-cobro { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(280px, 1fr); gap: 20px; align-items: start; }
+.g3-cobro-main { display: grid; gap: 14px; min-width: 0; }
+.g3-cobro-side { display: grid; gap: 16px; position: sticky; top: 0; padding: 16px; border: 1px solid var(--tn-line); border-radius: 16px; background: var(--tn-surface-2); color: var(--tn-ink); min-width: 0; }
+.g3-cobro-side h3 { margin: 0 0 8px; font-size: 14px; color: var(--tn-ink); }
+.g3-cust { display: grid; gap: 8px; }
+.g3-items td { vertical-align: top; }
+.g3-inline-select { display: block; margin-top: 6px; padding: 6px 8px; border: 1px solid var(--tn-line); border-radius: 8px; background: var(--tn-surface); color: var(--tn-ink); font: inherit; font-size: 12.5px; max-width: 100%; }
+.g3-offer { display: block; margin-top: 6px; padding: 6px 10px; border: 1px dashed var(--tn-violet-text); border-radius: 10px; background: var(--tn-violet-soft); color: var(--tn-violet-text); font: inherit; font-size: 12.5px; font-weight: 700; cursor: pointer; text-align: left; }
+.g3-offer:hover { border-style: solid; }
+.g3-offer:disabled { opacity: .6; cursor: default; }
+.g3-stepper { display: inline-flex; align-items: center; gap: 6px; }
+.g3-stepper button { width: 28px; height: 28px; border-radius: 8px; border: 1px solid var(--tn-line); background: var(--tn-surface); color: var(--tn-ink); font: inherit; font-weight: 800; cursor: pointer; }
+.g3-stepper button:disabled { opacity: .4; cursor: default; }
+.g3-row-edit { display: inline-flex; align-items: center; gap: 6px; }
+.g3-row-edit input, .g3-pay-line input, .g3-pay-line select, .g3-cons-row input, .g3-cons-row select, .g3-add-filters input, .g3-add-filters select, .g3-rule input, .g3-rule select {
+  padding: 9px 11px; border: 1px solid var(--tn-line); border-radius: 10px; background: var(--tn-surface); color: var(--tn-ink); font: inherit; min-width: 0; }
+.g3-discounts { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.g3-discounts li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 10px; background: var(--tn-green-soft); color: var(--tn-green-text); font-size: 13px; }
+.g3-discounts li span { flex: 1; }
+.g3-discounts small { color: inherit; opacity: .85; }
+.g3-discounts .tn-link-button { color: var(--tn-green-text); }
+.g3-totals { display: grid; gap: 8px; }
+.g3-totals > div, .g3-split-list > div { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; font-size: 14px; }
+.g3-totals b, .g3-split-list b { font-variant-numeric: tabular-nums; }
+.g3-total { padding-top: 8px; border-top: 1px solid var(--tn-line); font-size: 16px !important; font-weight: 800; }
+.g3-due { font-size: 20px !important; color: var(--tn-brand-text); }
+.g3-check { display: flex; gap: 10px; align-items: flex-start; font-size: 13.5px; color: var(--tn-ink); cursor: pointer; }
+.g3-check input { width: 18px; height: 18px; margin-top: 1px; accent-color: var(--tn-brand); flex: none; }
+.g3-pay { display: grid; gap: 8px; }
+.g3-pay-line { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.g3-pay-line select { flex: 1 1 120px; }
+.g3-pay-line input { flex: 1 1 100px; text-align: right; }
+.g3-tip { display: grid; gap: 8px; }
+.g3-split-list { display: grid; gap: 8px; padding: 12px 14px; border: 1px solid var(--tn-line); border-radius: 14px; background: var(--tn-surface); color: var(--tn-ink); }
+.g3-done { display: grid; gap: 12px; justify-items: center; text-align: center; padding: 8px 0; }
+.g3-done .g3-split-list { width: 100%; text-align: left; }
+.g3-big { font-size: 36px; letter-spacing: -0.02em; color: var(--tn-ink); }
+.g3-add-filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 14px 0 10px; }
+.g3-add-filters input { flex: 1 1 200px; }
+.g3-pick-list { display: grid; gap: 6px; max-height: 360px; overflow: auto; }
+.g3-pick { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 11px 14px; border: 1px solid var(--tn-line); border-radius: 12px; background: var(--tn-surface); color: var(--tn-ink); font: inherit; cursor: pointer; text-align: left; }
+.g3-pick:hover:not(:disabled) { border-color: var(--tn-brand-text); background: var(--tn-brand-soft); }
+.g3-pick:disabled { opacity: .5; cursor: default; }
+.g3-pick small { display: block; color: var(--tn-muted); font-size: 12.5px; }
+.g3-pick b { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.g3-actions { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.g3-void { border-color: var(--tn-red-text); }
+
+/* productos */
+.g3-cons-row { display: grid; grid-template-columns: minmax(0, 2fr) 110px auto auto; gap: 8px; align-items: center; }
+
+/* comisiones */
+.g3-period { margin-bottom: 4px; }
+.g3-rules { display: grid; gap: 8px; }
+.g3-rule { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.2fr) minmax(0, 1.4fr) minmax(0, .9fr) 90px auto auto; gap: 8px; align-items: center; padding: 10px 12px; border: 1px solid var(--tn-line); border-radius: 12px; background: var(--tn-surface); }
+.g3-svc-pick { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px 14px; padding: 12px; border: 1px solid var(--tn-line); border-radius: 12px; background: var(--tn-surface-2); max-height: 260px; overflow: auto; }
+.g3-svc-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+
+/* clientes */
+.g3-cust-head { display: flex; gap: 12px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.g3-dl { display: grid; grid-template-columns: minmax(110px, 160px) 1fr; gap: 6px 12px; margin: 0; font-size: 13.5px; }
+.g3-dl dt { color: var(--tn-muted); font-weight: 700; }
+.g3-dl dd { margin: 0; color: var(--tn-ink); word-break: break-word; }
+.g3-privacy { margin-top: 16px; }
+
+@media (max-width: 860px) {
+  .g3-cobro { grid-template-columns: minmax(0, 1fr); }
+  .g3-cobro-side { position: static; }
+  .g3-rule { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .g3-cons-row { grid-template-columns: minmax(0, 1fr) 90px; }
+}
+@media (max-width: 520px) {
+  .g3-dl { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .g3-dl dd { margin-bottom: 8px; }
+  .g3-big { font-size: 30px; }
+}
